@@ -6,7 +6,7 @@
 <#@ import namespace="Microsoft.Win32" #>
 <#@ output extension=".cs" #>
 <#
-/ ************************ Filled with your project data  ********************************* /
+/************************ Filled with your project data  *********************************/
 
 // Names.
 string projectName = "MyProjectName"; // Project (short name for COM).
@@ -21,7 +21,7 @@ int minorVersion = 0;
 // Year of the start of work on the project.
 string since = "2021";
 
-/ ***************************************************************************************** / 
+/*****************************************************************************************/ 
 
 DateTime today = DateTime.Today;
 string years = today.ToString("yyyy");
@@ -86,11 +86,11 @@ using System.Runtime.InteropServices;
 // attributes. Change the values of these attributes to change the information,
 // related to the assembly. 
 [assembly: AssemblyTitle("<#= productName#> <#=string.IsNullOrEmpty(assemblyType) ? "" : assemblyType + " "#><#= majorVersion#>.<#= minorVersion#>")] // Assembly name. 
-[assembly: AssemblyDescription("<#= productName#> <#= majorVersion#>.<#= minorVersion#><#=string.IsNullOrEmpty(assemblyType) ? "" : " " + assemblyType#>")] // Description of the assembly. 
-[assembly: AssemblyCompany("<#= developerName#>")] // Developer
+[assembly: AssemblyDescription("<#= productName#> <#= majorVersion#>.<#= minorVersion#><#=string.IsNullOrEmpty(assemblyType) ? "" : " " + assemblyType#>")] // Assembly description. 
+[assembly: AssemblyCompany("<#= developerName#>")] // Developer.
 [assembly: AssemblyProduct("<#= developerName#> <#= productName#>")] // Product name.
-[assembly: AssemblyCopyright("© <#= developerName#> <#= years #>")] // Copyrights.
-//[assembly: AssemblyTrademark("<#= developerName#>® <#= productName#>®")] // Legal trademark.
+[assembly: AssemblyCopyright("© <#= developerName#> <#= years #>")] // Copyright.
+[assembly: AssemblyTrademark("<#= developerName#>® <#= productName#>®")] // Trademark.
 [assembly: AssemblyCulture("")]
 [assembly: AssemblyVersion("<#= majorVersion#>.<#= minorVersion#>.<#= today.ToString("yyMM") #>.<#= $"{ver:0000}"#>")]
 [assembly: AssemblyFileVersion("<#= majorVersion#>.<#= minorVersion#>.<#= today.ToString("yyMM") #>.<#= $"{ver:0000}"#>")]
