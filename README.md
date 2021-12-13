@@ -6,10 +6,11 @@ The file **AssemblyInfo.tt** is a T4 file template for C# projects. Just add it 
 Futures:  
 - creation of a project description;  
 - automatic increment of the assembly version "major.minor.**date.buid**", where:
-  - **major** - user-defined majorVersion variable,
-  - **minor** - user-defined minorVersion variable, 
-  - **date** - today's date in "YYMM" format,
-  - **buid** - autoincremented four-digit variable.
+    - **major** - user-defined majorVersion variable,
+    - **minor** - user-defined minorVersion variable, 
+    - **date** - today's date in "YYMM" format,
+    - **buid** - autoincremented four-digit variable.
+- license text (you can replace according to your choice or remove it).  
 
 Here is an example of the generated AssemblyInfo.cs in my "Initialization Settings Library" project.  
 
@@ -20,27 +21,27 @@ Initialization Settings Library v. 1.0
 The MIT License (MIT)
 Copyright: © NG256 2021.
 
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated
-documentation files (the "Software"), to deal in the
-Software without restriction, including without limitation
+Permission is  hereby granted, free of charge, to any person
+obtaining   a copy    of    this  software    and associated
+documentation  files  (the "Software"),    to  deal   in the
+Software without  restriction, including without  limitation
 the rights to use, copy, modify, merge, publish, distribute,
-sublicense, and / or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
+sublicense,  and/or  sell  copies   of  the Software, and to
+permit persons to whom the Software  is furnished to  do so,
+subject       to         the      following      conditions:
 
-The above copyright notice and this permission notice shall
-be included in all copies or substantial portions of the
+The above copyright  notice and this permission notice shall
+be  included  in all copies   or substantial portions of the
 Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
-KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
-OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE  SOFTWARE IS  PROVIDED  "AS IS", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS  OR IMPLIED, INCLUDING  BUT NOT LIMITED TO THE
+WARRANTIES  OF MERCHANTABILITY, FITNESS    FOR A  PARTICULAR
+PURPOSE AND NONINFRINGEMENT. IN  NO EVENT SHALL  THE AUTHORS
+OR  COPYRIGHT HOLDERS  BE  LIABLE FOR ANY CLAIM,  DAMAGES OR
+OTHER LIABILITY,  WHETHER IN AN  ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF   OR IN CONNECTION  WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
 ***********************************************************/
 
 #if COMVISIBLE
